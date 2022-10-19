@@ -1,38 +1,43 @@
+body {
+  background-color: lightblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.addQuestion {
+  padding: 4rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(26, 47, 207);
+  font-size: 1.1rem;
+  color: white;
+  border-radius: 0.2rem;
+  box-shadow: 1px 3px 8px 3px rgb(71, 71, 228);
+}
+
+.addQuestion>input {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 0.2rem;
+  border-radius: .2rem;
+}
+
+.addQuestion button {
+  padding: 0.5rem;
+  background-color: rgb(78, 193, 235);
+  border: none;
+  font-size: 1.1rem;
+  text-transform: uppercase;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addQuestion button:hover {
+  background-color: rgb(60, 163, 200);
 }
